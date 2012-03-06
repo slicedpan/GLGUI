@@ -64,14 +64,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="GUIBase.h" />
+    <ClInclude Include="GUITextBox.h" />
     <ClInclude Include="GUIElement.h" />
     <ClInclude Include="GUITray.h" />
+    <ClInclude Include="Primitives.h" />
+    <ClInclude Include="Slider.h" />
     <ClInclude Include="unzip.h" />
+    <ClInclude Include="VarPrint.h" />
+    <ClInclude Include="VarWatch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GUIBase.cpp" />
+    <ClCompile Include="GUITextBox.cpp" />
     <ClCompile Include="GUIElement.cpp" />
     <ClCompile Include="GUITray.cpp" />
+    <ClCompile Include="Primitives.cpp" />
+    <ClCompile Include="Slider.cpp" />
     <ClCompile Include="unzip.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

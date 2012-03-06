@@ -27,6 +27,21 @@
     <ClInclude Include="unzip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Slider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Primitives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GUITextBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VarWatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VarPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GUIBase.cpp">
@@ -39,6 +54,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="unzip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Primitives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUITextBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
