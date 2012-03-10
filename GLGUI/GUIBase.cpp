@@ -1,6 +1,6 @@
 #include "GUIBase.h"
 #include "GUITray.h"
-#include <glut.h>
+#include "glFunctions.h"
 
 GUIBase::GUIBase(void)
 {

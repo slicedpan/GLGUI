@@ -24,9 +24,9 @@ public:
 	}
 	void Draw(Vec2& position)
 	{
-		DrawBGQuad(colour, position, width, height, 3);
+		DrawBGQuad(colour * 0.5f, position, width, height, 1, true);
 		valueString = label + ": " + printer->Print(value);
-		PrintText(position + Vec2(5, 5), valueString.c_str(), textColour);
+		PrintText(position + Vec2(3, 3), valueString.c_str(), textColour);
 	}
 private:
 	void Init()
@@ -34,8 +34,8 @@ private:
 		int numChars = printer->MaxChars();
 		if (numChars <= 0)
 			numChars = 60;
-		width = (label.length() + 2 + numChars) * 7 + 10;
-		height = 23;
+		width = (label.length() + 2 + numChars) * 7 + 8;
+		height = 21;
 	}
 	IVarPrint<T>* printer;
 	std::string label;

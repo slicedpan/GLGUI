@@ -63,13 +63,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="fonttex.h" />
+    <ClInclude Include="glFunctions.h" />
     <ClInclude Include="GUIBase.h" />
     <ClInclude Include="GUITextBox.h" />
     <ClInclude Include="GUIElement.h" />
     <ClInclude Include="GUITray.h" />
     <ClInclude Include="Primitives.h" />
     <ClInclude Include="Slider.h" />
+    <ClInclude Include="stb_image_write.h" />
     <ClInclude Include="unzip.h" />
+    <ClInclude Include="VarChange.h" />
     <ClInclude Include="VarPrint.h" />
     <ClInclude Include="VarWatch.h" />
   </ItemGroup>
@@ -78,6 +82,7 @@
     <ClCompile Include="GUITextBox.cpp" />
     <ClCompile Include="GUIElement.cpp" />
     <ClCompile Include="GUITray.cpp" />
+    <ClCompile Include="fonttex.cpp" />
     <ClCompile Include="Primitives.cpp" />
     <ClCompile Include="Slider.cpp" />
     <ClCompile Include="unzip.cpp" />

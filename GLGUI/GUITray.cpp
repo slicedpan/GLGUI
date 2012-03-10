@@ -2,7 +2,7 @@
 #include "GUIElement.h"
 #include "Primitives.h"
 #include "GUITextBox.h"
-#include <glut.h>
+#include "glFunctions.h"
 
 GUITray::GUITray(int xPos, int yPos, unsigned int growDirection)
 {
@@ -36,7 +36,7 @@ void GUITray::Draw()
 	for (int i = 0; i < elements.size(); ++i)
 	{
 		elements[i]->Draw(curPos);
-		curPos += Vec2(0, elements[i]->GetHeight() + 6);
+		curPos += Vec2(0, elements[i]->GetHeight() + 3);
 	}
 }
 
@@ -46,6 +46,8 @@ void GUITray::AddElement(GUIElement* element)
 	if (element->GetWidth() > width)
 		width = element->GetWidth();
 	height += element->GetHeight();
+	element->SetColour(colour);
+	element->SetTextColour(textColour);
 }
 
 void GUITray::AddTextBox(std::string text)
@@ -69,4 +71,22 @@ void GUITray::MouseRelease(int x, int y, int button)
 void GUITray::MouseMove(int x, int y)
 {
 
+}
+
+void GUITray::SetColour(Vec4& colour)
+{
+	this->colour = colour;
+	for (int i = 0; i < elements.size(); ++i)
+	{
+		elements[i]->SetColour(colour);
+	}
+}
+
+void GUITray::SetTextColour(Vec4& textColour)
+{
+	this->textColour = textColour;
+	for (int i = 0; i < elements.size(); ++i)
+	{
+		elements[i]->SetTextColour(textColour);
+	}
 }

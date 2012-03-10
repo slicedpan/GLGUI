@@ -42,6 +42,18 @@
     <ClInclude Include="VarPrint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="fonttex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="glFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VarChange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GUIBase.cpp">
@@ -63,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GUITextBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fonttex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

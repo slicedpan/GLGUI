@@ -16,6 +16,8 @@ public:
 	void MouseMove(int x, int y);
 	void AddTextBox(std::string text);
 	void AddElement(GUIElement* element);
+	void SetColour(Vec4& colour);
+	void SetTextColour(Vec4& textColour);
 private:
 	std::vector<GUIElement*> elements;
 	Vec4 colour;
